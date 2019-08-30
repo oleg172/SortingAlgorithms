@@ -37,12 +37,12 @@ package algorithms.sorting.mergeSort;
  * */
 public class MergeSort {
 
-    private MergeSort instance;
+    private static MergeSort instance;
 
     private MergeSort() {
     }
 
-    public MergeSort getInstance() {
+    public static MergeSort getInstance() {
         if (instance == null) {
             instance = new MergeSort();
             return instance;
@@ -67,8 +67,8 @@ public class MergeSort {
         int lengthRight = right - mid;
 
         //создаем временные подмассивы
-        int leftArray[] = new int[lengthLeft];
-        int rightArray[] = new int[lengthRight];
+        int[] leftArray = new int[lengthLeft];
+        int[] rightArray = new int[lengthRight];
 
         //копируем отсортированные подмассивы во временные
         for (int i = 0; i < lengthLeft; i++) {

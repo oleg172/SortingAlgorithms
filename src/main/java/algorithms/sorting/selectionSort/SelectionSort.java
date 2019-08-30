@@ -22,13 +22,13 @@ package algorithms.sorting.selectionSort;
 
 public class SelectionSort {
 
-    private SelectionSort instance;
+    private static SelectionSort instance;
 
     private SelectionSort() {
 
     }
 
-    public SelectionSort getInstance() {
+    public static SelectionSort getInstance() {
         if (instance == null) {
             instance = new SelectionSort();
             return instance;

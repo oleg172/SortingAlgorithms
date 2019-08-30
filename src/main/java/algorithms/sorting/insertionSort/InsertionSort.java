@@ -20,13 +20,13 @@ package algorithms.sorting.insertionSort;
 
 public class InsertionSort {
 
-    private InsertionSort instance;
+    private static InsertionSort instance;
 
     private InsertionSort() {
 
     }
 
-    public InsertionSort getInstance() {
+    public static InsertionSort getInstance() {
         if (instance == null) {
             instance = new InsertionSort();
             return instance;

@@ -22,13 +22,13 @@ package algorithms.sorting.bubbleSort;
 
 public class BubbleSort {
 
-    private BubbleSort instance;
+    private static BubbleSort instance;
 
     private BubbleSort() {
 
     }
 
-    public BubbleSort getInstance() {
+    public static BubbleSort getInstance() {
         if (instance == null) {
             instance = new BubbleSort();
             return instance;
